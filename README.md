@@ -1,4 +1,3 @@
 # Django
 
-Mywork is a Enviroment.
-And Myemployee is project.
+Mywork is a Enviroment and Myemployee is project.
