@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from users import views as user_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('members/', include('members.urls')),        #This is also blank for the blank port also with the forder name members and urls.py
+    path('register/', user_views.register, name='register'),  #This is the path for the register page
+    path('', include('members.urls')),        #This is also blank for the blank port also with the forder name members and urls.py
 ]
