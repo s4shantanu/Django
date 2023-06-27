@@ -1,4 +1,4 @@
-# Django Project - Blogging Platform.
+# Django Project - Blogging Platform
 
 This is a fully functional and feature-rich Django application that serves as a blogging platform. It allows users to create blog posts, manage user accounts, and perform various actions such as login, logout, and password reset. The application also provides options to upload a profile picture and resize it if necessary. Users can view their own blog posts, update them, and delete posts with a confirmation option. Additionally, users can explore and interact with posts from other users.
 
