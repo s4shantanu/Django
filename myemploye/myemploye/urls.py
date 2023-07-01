@@ -27,6 +27,10 @@ urlpatterns = [
     path('profile/', user_views.profile, name='profile'),  #This is the path for the profile page
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),   #This is the path for the register page
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'), #This is the path for the logout page
+    path('password-reset/', auth_views.PasswordResetView.as_view(template_name='users/password_reset.html'), name='password_reset'), #This is the path for the password reset page
+    path('password-reset/done/', auth_views.PasswordResetDoneView.as_view(template_name='users/password_reset_done.html'), name='password_reset_done'), #This is the path for the password reset done page
+    path('password-reset-confirm/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='users/password_reset_confirm.html'), name='password_reset_confirm'), #This is the path for the password reset confirm page
+    path('password-reset-complete/', auth_views.PasswordResetCompleteView.as_view(template_name='users/password_reset_complete.html'), name='password_reset_complete'), #This is the path for the password reset complete page.
     path('', include('members.urls')),        #This is also blank for the blank port also with the forder name members and urls.py
 ]
 
